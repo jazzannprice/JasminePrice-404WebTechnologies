@@ -1,0 +1,15 @@
+body{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.navSection{
+  background-color: #077485;
+}
+
+.mobileMenuColor{
+  background-color: #05525E
+}
