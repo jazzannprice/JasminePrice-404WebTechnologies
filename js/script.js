@@ -1,3 +1,4 @@
+// Function to update the current year in the footer
 window.onload = function() {
   currentYear();
 };
@@ -17,7 +18,7 @@ var navbar = document.getElementById("navbar");
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// Add the sticky class to the navbar when you reach its position. Then remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
@@ -25,6 +26,13 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+// Add smooth scrolling 
+$('.navbar').localScroll();
+
+
+
+
 
 
 
