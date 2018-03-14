@@ -30,7 +30,6 @@ function myFunction() {
 
 
 
-
 //Jasmine Price - 405 - Creative Coding Project
 
 //Create two variables that will store the new objects from the class Circle

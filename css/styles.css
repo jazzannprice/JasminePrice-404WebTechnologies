@@ -28,11 +28,21 @@ h1, h2, h3, h4, h5, h6{
   top: 0;
   left: 0;
 }
-header{
+
+#header{
   margin-bottom: -20px; /* unsure of where nav was, so added margin to push it up*/
   background-color: white;
 }
 
 .img-circle{
   border-radius: 50%
+}
+
+
+
+
+
+
+.box:hover {
+  opacity: 0.30;
 }

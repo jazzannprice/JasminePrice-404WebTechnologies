@@ -10,42 +10,42 @@
  <!-- font html off google --> <!-- font html off google -->
     <link href="css/styles.css" rel="stylesheet"> <!-- css link, must be underneath everything else -->
   <body>
-    <header>
+    <div id="header">
       <!--<img id="template" src="assets/img/template.jpeg"> -->
 
       <h2>Template</h2>
       <p>Test for scroll<p>
-    </header>
+    </div>
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark navSection text-uppercase">
-      <a class="navbar-brand" href="#">Jasmine Price</a>
+      <a class="navbar-brand" href="#header">Jasmine Price</a>
       <button type="button" class="navbar-toggler navbar-toggler-right text-uppercase bg-primaryn mobileMenuColor text-white rounded" data-toggle="collapse" data-target="#mobileMenu">
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="mobileMenu">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#header">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Me</a>
+          <a class="nav-link" href="#about">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Animation</a>
+          <a class="nav-link" href="#animation">Animation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">University Work</a>
+          <a class="nav-link" href="#universityWork">University Work</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Art</a>
+          <a class="nav-link" href="#art">Art</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
     </nav>
 
-    <section>
+    <section id="about">
       <div id="backgroundAnimation"></div>
       <div class="container">
       <h2 class="text-center mt-4">About Me</h2>
@@ -54,58 +54,59 @@
     </div> <!-- container close -->
     </section>
 
-    <section>
+    <section id="animation">
       <div class="container">
       <h2 class="text-center mt-4">Animation</h2>
       <hr>
       <div class="row">
-        <div class="col-4">
-      <img id="image" src="assets/img/template.jpeg" class="img-fluid img-circle" >
+        <div class="box col-4">
+      <img id="image" src="assets/img/can.png" class="img-fluid img-circle" >
+
       </div>
       <div class="col-4">
-      <img src="assets/img/template.jpeg" class="img-fluid img-circle" >
+      <img src="assets/img/lavaLamp.png" class="img-fluid img-circle" >
       </div>
       <div class="col-4">
-      <img src="assets/img/template.jpeg" class="img-fluid img-circle" >
+      <img src="assets/img/vfxExplosion.png" class="img-fluid img-circle" >
       </div>
     </div> <!-- container close -->
     </section>
 
-    <section>
+    <section id="universityWork">
       <div class="container">
       <h2 class="text-center mt-4">University Work</h2>
       <hr>
       <div class="row">
         <div class="col-4">
-      <img src="assets/img/template.jpeg" class="img-fluid img-circle" >
+      <img src="assets/img/arduinoWork.png" class="img-fluid img-circle" >
       </div>
       <div class="col-4">
-      <img src="assets/img/template.jpeg" class="img-fluid img-circle" >
+      <img src="assets/img/plasticPlanet.png" class="img-fluid img-circle" >
       </div>
       <div class="col-4">
-      <img src="assets/img/template.jpeg" class="img-fluid img-circle" >
+      <img src="assets/img/generativeArt.png" class="img-fluid img-circle" >
       </div>
     </div> <!-- container close -->
     </section>
 
-    <section>
+    <section id="art">
       <div class="container">
       <h2 class="text-center mt-4">Art</h2>
       <hr>
       <div class="row">
         <div class="col-4">
-      <img src="assets/img/template.jpeg" class="img-fluid img-circle" >
+      <img src="assets/img/russianDoll.png" class="img-fluid img-circle" >
       </div>
       <div class="col-4">
-      <img src="assets/img/template.jpeg" class="img-fluid img-circle" >
+      <img src="assets/img/lifeDrawing.png" class="img-fluid img-circle" >
       </div>
       <div class="col-4">
-      <img src="assets/img/template.jpeg" class="img-fluid img-circle" >
+      <img src="assets/img/flowerPainting.png" class="img-fluid img-circle" >
       </div>
     </div> <!-- container close -->
     </section>
 
-    <section>
+    <section id="contact">
       <div class="container">
       <h2 class="text-center pt-3"> Contact Me</h2>
       <hr>
