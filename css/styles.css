@@ -13,3 +13,26 @@ h1, h2, h3, h4, h5, h6{
 .mobileMenuColor{
   background-color: #05525E
 }
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+#backgroundAnimation{
+  position:fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+header{
+  margin-bottom: -20px; /* unsure of where nav was, so added margin to push it up*/
+  background-color: white;
+}
+
+.img-circle{
+  border-radius: 50%
+}
