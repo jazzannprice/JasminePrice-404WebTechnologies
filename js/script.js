@@ -27,7 +27,7 @@ function myFunction() {
   }
 }
 
-// Add smooth scrolling 
+// Add smooth scrolling
 $('.navbar').localScroll();
 
 

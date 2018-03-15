@@ -6,12 +6,32 @@ h1, h2, h3, h4, h5, h6{
   font-family: 'Julius Sans One', sans-serif;
 }
 
+.portfolioHeader{
+  text-align: center;
+}
+
+#image{
+  width: 100%;
+}
+
 .navSection{
   background-color: #077485;
 }
 
+.btn-primary{
+  background-color: #05525E;
+}
+
+.btn-primary:hover{
+  background-color: #077485;
+}
+
+.btn-outline-primary{
+  background-color: #05525E;
+}
+
 .mobileMenuColor{
-  background-color: #05525E
+  background-color: #05525E;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -30,19 +50,13 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #header{
-  margin-bottom: -20px; /* unsure of where nav was, so added margin to push it up*/
-  background-color: white;
+  margin-bottom: -10px; /* unsure of where nav was, so added margin to push it up*/
 }
 
 .img-circle{
   border-radius: 50%
 }
 
-
-
-
-
-
-.box:hover {
-  opacity: 0.30;
+.colorContainer{
+  background-color: #E1DCC0;
 }
