@@ -116,3 +116,9 @@ displayCircle(){
   ellipse(this.x+this.mapSin, this.y, this.size, this.size);
   }
 }
+
+$('.portfolioHeader').chocolate({
+  images : ['/Users/jazza/Desktop/JasminePrice-404Test3/assets/img/flowerPainting2.png', '/Users/jazza/Desktop/JasminePrice-404Test3/assets/img/lavagif.gif', '/Users/jazza/Desktop/JasminePrice-404Test3/assets/img/russianDoll2.png'],
+  interval  : 4000,
+  speed     : 1000
+});
