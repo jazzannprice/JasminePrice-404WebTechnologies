@@ -1,14 +1,15 @@
-// Function to update the current year in the footer
-window.onload = function() {
-  currentYear();
-};
+// Jasmine Price DAT404 JavaScript
 
-function currentYear(){
-  const date = new Date();
-  const autoDate = document.querySelector('#autoDate');
-  autoDate.textContent = date.getFullYear();
-};
 
+// Header fading slideshow controls and images
+$('.portfolioHeader').chocolate({
+  images : ['/Users/jazza/Desktop/JasminePrice-404Test3/assets/img/flowerPainting2.png', '/Users/jazza/Desktop/JasminePrice-404Test3/assets/img/lavagif.gif', '/Users/jazza/Desktop/JasminePrice-404Test3/assets/img/russianDoll2.png'],
+  interval  : 4000,
+  speed     : 1000
+});
+
+
+// Creating the sticky navbar effect
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
@@ -27,22 +28,17 @@ function myFunction() {
   }
 }
 
+
 // Add smooth scrolling
 $('.navbar').localScroll();
 
 
-
-
-
-
-
-
-
-//Jasmine Price - 405 - Creative Coding Project
-
+// The code to add the moving background animation
+// Console Log easter egg instructions
+console.log('Welcome! Hold down the Q key for some wavey lines on the main background!');
 //Create two variables that will store the new objects from the class Circle
 let circleArray = [];
-let arraySize = 7;
+let arraySize = 8;
 
 function setup(){
   //Use this function to define the size of the output window
@@ -55,11 +51,11 @@ function setup(){
 }
 
 function draw(){
-  //If the mouse is held down, the fade will create a longer trail, when it is released the trail will shorten
-  if (mouseIsPressed){
+  //If the key 'q' is held down, the fade will create a longer trail, when it is released the trail will shorten
+  if (key === 'q'){
     fill(255, 1);
   } else{
-    fill(255, 40);
+    fill(255, 50);
   }
   //The background
   rect(0, 0, width, height);
@@ -101,7 +97,7 @@ moveFunction(){
     this.grn = random (255); //Colours will change
     this.bl = random (255); //Colours will change
     this.a = 255;
-    this.size = (random(10, 50)); //Size will change
+    this.size = (random(10, 40)); //Size will change
     this.x = random(0, innerWidth); //Starting point in the x axis will change
     this.y = -25; //Instead reset to 0, we reset to 0-25 (half size of ellipse)
   }
@@ -117,8 +113,14 @@ displayCircle(){
   }
 }
 
-$('.portfolioHeader').chocolate({
-  images : ['/Users/jazza/Desktop/JasminePrice-404Test3/assets/img/flowerPainting2.png', '/Users/jazza/Desktop/JasminePrice-404Test3/assets/img/lavagif.gif', '/Users/jazza/Desktop/JasminePrice-404Test3/assets/img/russianDoll2.png'],
-  interval  : 4000,
-  speed     : 1000
-});
+
+// Function to update the current year in the footer
+window.onload = function() {
+  currentYear();
+};
+
+function currentYear(){
+  const date = new Date();
+  const autoDate = document.querySelector('#autoDate');
+  autoDate.textContent = date.getFullYear();
+};

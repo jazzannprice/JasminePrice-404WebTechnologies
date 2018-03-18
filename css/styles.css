@@ -1,60 +1,55 @@
 html, body {
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 100%;
 }
 
+/* Font for the text body */
 body{
   font-family: 'Josefin Sans', sans-serif;
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: repeat;
-  background-size: cover;
 }
 
+/* font for the headings */
 h1, h2, h3, h4, h5, h6{
   font-family: 'Julius Sans One', sans-serif;
 }
 
 
-
 #header{
   text-align: center;
-
+  background-color: #fff;
 }
 
-#image{
-  width: 100%;
-}
-
-#about{
+/* Makes these sections 100% of the screen */
+#about, #contact{
   height: 100%;
 }
 
-#contact{
-  height: 100%;
+/* Colour of certain containers */
+.colorContainer{
+  background-color: #D6E4E5;
 }
 
+/* Size and positioning of the header slideshow */
+.portfolioHeader{
+  position: relative;
+  height: 1020px;
+}
+.portfolioHeader > div{
+  height: 100% !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Colour of the navbar mobile bars */
+.mobileMenuColor{
+  background-color: #1C3E4A;
+}
+
+/* Colour of the navbar */
 .navSection{
   background-color: #077485;
 }
 
-.btn-primary{
-  background-color: #05525E;
-}
-
-.btn-primary:hover{
-  background-color: #077485;
-}
-
-.btn-outline-primary{
-  background-color: #05525E;
-}
-
-.mobileMenuColor{
-  background-color: #05525E;
-}
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
@@ -64,6 +59,7 @@ h1, h2, h3, h4, h5, h6{
   z-index: 10;
 }
 
+
 #backgroundAnimation{
   position:fixed;
   z-index: -1;
@@ -71,17 +67,15 @@ h1, h2, h3, h4, h5, h6{
   left: 0;
 }
 
-#header{
-  background-color: #fff;
-}
-
+/* Class to make the images rounded */
 .img-circle{
   border-radius: 50%
 }
-
-.colorContainer{
-  background-color: #D6E4E5;
+/* Adding a shower to the images */
+.imageSahdow {
+    box-shadow: 5px 10px 18px #888888;
 }
+
 
 .content {
   position: relative;
@@ -146,24 +140,54 @@ h1, h2, h3, h4, h5, h6{
   top: 80%;
 }
 
-.portfolioHeader{
-  position: relative;
-  height: 1020px;
-}
-
-.portfolioHeader > div{
-  height: 100% !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-}
-
 
 .contactConainter{
   padding-top: 9%;
 }
 
 
+.sendButton{
+  background-color: #1C3E4A;
+  color: white;
+  padding: 1.5%;
+}
 
-.imageSahdow {
-    box-shadow: 5px 10px 18px #888888;
+.sendButton:hover{
+  background-color: #077485;
+}
+/* Social media icon appearance */
+.btnFacebook{
+  background-color: #2A54AA;
+  color: white;
+}
+/* Hover colour */
+.btnFacebook:hover{
+  color: white;
+  background-color: #1A3978;
+}
+/* Social media icon appearance */
+.btnInsta{
+  background-color: #FF2A72;
+  color: white;
+}
+/* Hover colour */
+.btnInsta:hover{
+  color: white;
+  background-color: #C72159;
+}
+/* Social media icon appearance */
+.btnGit{
+  background-color: #323232;
+  color: white;
+}
+/* Hover colour */
+.btnGit:hover{
+  color: white;
+  background-color: #141414;
+}
+
+
+/* Colour of the hover underline */
+.hvr-underline-from-center::before{
+  background: #1C3E4A;
 }
