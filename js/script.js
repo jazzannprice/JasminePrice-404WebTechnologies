@@ -33,6 +33,15 @@ function myFunction() {
 $('.navbar').localScroll();
 
 
+// Scroll Reveal
+window.sr = ScrollReveal({ reset: true }); // Reset each time
+// window.sr = ScrollReveal(); // No reset
+// Scroll eveal settings
+sr.reveal('.foo-4', {
+  viewFactor: 0.5
+});
+
+
 // The code to add the moving background animation
 // Console Log easter egg instructions
 console.log('Welcome! Hold down the Q key for some wavey lines on the main background!');
