@@ -2,11 +2,10 @@
 
 
 // Header fading slideshow controls and images
-$('.portfolioHeader').chocolate({
-  images : ['/Users/jazza/Desktop/JasminePrice-404Test3/assets/img/flowerPainting2.png', '/Users/jazza/Desktop/JasminePrice-404Test3/assets/img/lavagif.gif', '/Users/jazza/Desktop/JasminePrice-404Test3/assets/img/russianDoll2.png'],
-  interval  : 4000,
-  speed     : 1000
-});
+
+  $(function() {
+    $(".rslides").responsiveSlides();
+  });
 
 
 // Creating the sticky navbar effect
@@ -29,8 +28,30 @@ function myFunction() {
 }
 
 
-// Add smooth scrolling
-$('.navbar').localScroll();
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
 
 
 // Scroll Reveal

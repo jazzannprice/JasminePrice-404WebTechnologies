@@ -16,15 +16,38 @@ h1, h2, h3, h4, h5, h6{
   font-family: 'Julius Sans One', sans-serif;
 }
 
+.navbar{
+  z-index: 10000;
+}
 
 #header{
   text-align: center;
   background-color: #fff;
+  position: relative;
+  height: 100%;
 }
+
+#header ul{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+#header div{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 
 /* Makes these sections 100% of the screen */
 #about, #contact{
   height: 100%;
+}
+
+.aboutContainer{
+  padding-top: 5%;
 }
 
 /* Colour of certain containers */
@@ -35,13 +58,59 @@ h1, h2, h3, h4, h5, h6{
 /* Size and positioning of the header slideshow */
 .portfolioHeader{
   position: relative;
-  height: 1020px;
+  height: 150px;
 }
+
+.mainLogo{
+  position: relative;
+  z-index: 9999;
+  width: 80%;
+  margin: 0px auto;
+  margin-top: -4%;/*used as a last resort*/
+  opacity: 0.9;
+}
+
 .portfolioHeader > div{
   height: 100% !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+
+
+
 
 /* Colour of the navbar mobile bars */
 .mobileMenuColor{
@@ -58,7 +127,7 @@ h1, h2, h3, h4, h5, h6{
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 9999;
 }
 
 /* Colour of the hover underline */
@@ -86,6 +155,8 @@ h1, h2, h3, h4, h5, h6{
 
 /* Content Details */
 .content {
+  position: relative;
+  width: 90%;
   overflow: hidden;
   border-radius: 50%
 }
@@ -191,4 +262,41 @@ h1, h2, h3, h4, h5, h6{
 .btnGit:hover{
   color: white;
   background-color: #141414;
+}
+
+
+
+@media (min-width: 350px) {
+  .portfolioHeader{
+    height: 350px;
+  }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .portfolioHeader{
+    height: 450px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .portfolioHeader{
+    height: 550px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .portfolioHeader{
+    height: 850px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .portfolioHeader{
+    height: 950px;
+  }
 }
