@@ -2,7 +2,6 @@
 
 
 // Header fading slideshow controls and images
-
   $(function() {
     $(".rslides").responsiveSlides();
   });
