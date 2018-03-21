@@ -44,11 +44,12 @@ h1, h2, h3, h4, h5, h6{
 #about, #contact{
   height: 100%;
 } */
-/*
+
 .aboutContainer{
-  padding-top: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
-*/
+
 /* Colour of certain containers */
 .colorContainer{
   background-color: #D6E4E5;
@@ -201,10 +202,11 @@ h1, h2, h3, h4, h5, h6{
   top: 80%;
 }
 
-/* Content positoining for the contact page
+/* Content positoining for the contact page */
 .contactConainter{
-  padding-top: 9%;
-} */
+padding-top: 5%;
+padding-bottom: 5%;
+}
 
 /* Send button styling */
 .sendButton{
