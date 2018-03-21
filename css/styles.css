@@ -24,7 +24,6 @@ h1, h2, h3, h4, h5, h6{
   text-align: center;
   background-color: #fff;
   position: relative;
-  height: 100%;
 }
 
 #header ul{
@@ -41,15 +40,15 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
-/* Makes these sections 100% of the screen */
+/* Makes these sections 100% of the screen
 #about, #contact{
   height: 100%;
-}
-
+} */
+/*
 .aboutContainer{
   padding-top: 10%;
 }
-
+*/
 /* Colour of certain containers */
 .colorContainer{
   background-color: #D6E4E5;
@@ -171,7 +170,7 @@ h1, h2, h3, h4, h5, h6{
 .content-details {
   position: absolute;
   text-align: center;
-  width: 90%;
+  width: 80%;
   top: 50%;
   left: 50%;
   opacity: 0;
@@ -202,10 +201,10 @@ h1, h2, h3, h4, h5, h6{
   top: 80%;
 }
 
-/* Content positoining for the contact page */
+/* Content positoining for the contact page
 .contactConainter{
   padding-top: 9%;
-}
+} */
 
 /* Send button styling */
 .sendButton{
@@ -256,28 +255,43 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
-
-@media (min-width: 350px) {
-
-}
-
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
+  .content-details h3{
+    font-size: 15px
+  }
+  .content-details p{
+    font-size: 0.6em;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
+  .content-details h3{
+    font-size: 20px
+  }
+  .content-details p{
+    font-size: 0.8em;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .content-details h3{
+    font-size: 35px
+  }
+  .content-details p{
+    font-size: 0.8em;
+  }
 
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
+  .content-details h3{
+    font-size: 30px
+  }
+  .content-details p{
+    font-size: 0.8em;
+  }
 }
