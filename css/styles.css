@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6{
 
 /* Bringing the navbar position forward in the z axis */
 .navbar{
-  z-index: 100;
+  z-index: 300;
 }
 
 /* Positioning of the header */
@@ -33,7 +33,6 @@ h1, h2, h3, h4, h5, h6{
   position: absolute;
   top: 0;
   left: 0;
-
 }
 
 /* Positioning of the slider */
@@ -60,11 +59,11 @@ h1, h2, h3, h4, h5, h6{
   z-index: 200;
   width: 80%;
   margin: 0px auto;
-  margin-top: -4%;/*used as a last resort*/
+  margin-top: -4%; /* Used as a last resort */
   opacity: 0.9;
 }
 
-/* Positioning and setting of the fading sliders */
+/* Positioning and settings of the fading sliders */
 .rslides {
   position: relative;
   list-style: none;
@@ -75,7 +74,6 @@ h1, h2, h3, h4, h5, h6{
   }
 
 .rslides li {
-  -webkit-backface-visibility: hidden;
   position: absolute;
   display: none;
   width: 100%;
@@ -148,6 +146,13 @@ h1, h2, h3, h4, h5, h6{
 .content {
   position: relative;
   width: 90%;
+  overflow: hidden;
+  border-radius: 50%
+}
+
+/* Seperatly adjusting the positioning of the mePhoto */
+.content-img {
+  position: relative;
   overflow: hidden;
   border-radius: 50%
 }
@@ -260,7 +265,7 @@ padding-bottom: 5%;
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .content-details h3{
-    font-size: 15px
+    font-size: 15px;
   }
   .content-details p{
     font-size: 0.6em;
@@ -270,7 +275,7 @@ padding-bottom: 5%;
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .content-details h3{
-    font-size: 20px
+    font-size: 20px;
   }
   .content-details p{
     font-size: 0.8em;
@@ -280,7 +285,7 @@ padding-bottom: 5%;
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .content-details h3{
-    font-size: 35px
+    font-size: 30px;
   }
   .content-details p{
     font-size: 0.8em;
@@ -291,7 +296,7 @@ padding-bottom: 5%;
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .content-details h3{
-    font-size: 30px
+    font-size: 30px;
   }
   .content-details p{
     font-size: 0.8em;
